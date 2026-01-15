@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Carro : MonoBehaviour
 {
-    public float VelocidadeM = 45f;
+    public float VelocidadeM = 100f;
     public ConstantForce2D force;
     
     public bool capotou = false;

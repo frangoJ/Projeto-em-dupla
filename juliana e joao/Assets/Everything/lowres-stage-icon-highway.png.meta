@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b9dcb9b4249c9314684605c1e4e7a858
+guid: 56737915f5fdfb04ebfeeafb1052221d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2268113555672827357
-    second: Design sem nome_0
+      213: -434154398373062300
+    second: lowres-stage-icon-highway_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Design sem nome_0
+      name: lowres-stage-icon-highway_0
       rect:
         serializedVersion: 2
-        x: 132
-        y: 155
-        width: 157
-        height: 263
+        x: 0
+        y: 0
+        width: 256
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd5802c0345f97f10800000000000000
-      internalID: 2268113555672827357
+      spriteID: 469dc4bffd299f9f0800000000000000
+      internalID: -434154398373062300
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Design sem nome_0: 2268113555672827357
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Moeda : MonoBehaviour
 {
-    [Header("Giro da moeda")]
+    [Header("Giro")]
     public float velocidade = 5f;
     public float escalaMinima = 0.2f;
 
@@ -10,10 +10,12 @@ public class Moeda : MonoBehaviour
     public int valor = 1;
 
     private Vector3 escalaInicial;
+    private AudioSource audioSource;
 
     void Start()
     {
         escalaInicial = transform.localScale;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -33,7 +35,12 @@ public class Moeda : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ColetaMoeda.instance.AdicionarMoeda(valor);
-            Destroy(gameObject);
+
+            
+            audioSource.Play();
+
+            
+            Destroy(gameObject, audioSource.clip.length);
         }
     }
 }

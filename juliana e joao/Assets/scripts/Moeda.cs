@@ -11,6 +11,8 @@ public class Moeda : MonoBehaviour
 
     private Vector3 escalaInicial;
     private AudioSource audioSource;
+    
+    private bool coletada = false;
 
     void Start()
     {
@@ -32,14 +34,19 @@ public class Moeda : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (coletada) return;
+
         if (other.CompareTag("Player"))
         {
+            coletada = true;
+
             ColetaMoeda.instance.AdicionarMoeda(valor);
 
-            
             audioSource.Play();
-
             
+            GetComponent<Collider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+
             Destroy(gameObject, audioSource.clip.length);
         }
     }
